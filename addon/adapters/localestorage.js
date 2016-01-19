@@ -58,7 +58,7 @@ export default Adapter.extend({
       for (var i = 0; i < ids.length; i++) {
         record = namespace.records[ids[i]];
         if (!record || !record.hasOwnProperty('id')) {
-          return.RSVP.reject(new Error("Couldn't find record of type '" + type.modelName
+          return RSVP.reject(new Error("Couldn't find record of type '" + type.modelName
                                              + "' for the id '" + ids[i] + "'."));
         }
         results.push(copy(record));
@@ -252,7 +252,7 @@ export default Adapter.extend({
           var promise;
           if (relationType === 'belongsTo' || relationType === 'hasOne') {
             promise = adapter.findRecord(null, relationModel, relationEmbeddedId, opts);
-          } else if (relationType == 'hasMany') {
+          } else if (relationType === 'hasMany') {
             promise = adapter.findMany(null, relationModel, relationEmbeddedId, opts);
           }
 

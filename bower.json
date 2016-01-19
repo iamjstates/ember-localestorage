@@ -1,14 +1,14 @@
 {
-  "name": "ember-cli-localestorage",
+  "name": "ember-localestorage",
   "description": "",
   "version": "0.0.1",
   "authors": [
     "Jay States <jstates@based.ca> (https://based.ca/)"
   ],
-  "homepage": "https://github.com/iamjstates/ember-cli-localestorage",
+  "homepage": "https://github.com/iamjstates/ember-localestorage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/iamjstates/ember-cli-localestorage.git"
+    "url": "https://github.com/iamjstates/ember-localestorage.git"
   },
   "license": "MIT",
   "keywords": [

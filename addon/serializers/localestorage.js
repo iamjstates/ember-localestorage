@@ -1,8 +1,6 @@
 import JSONSerializer from 'ember-data/serializers/json';
 import Ember from "ember";
 
-const get = Ember.get;
-
 export default JSONSerializer.extend({
   serializeHasMany: function(snapshot, json, relationship) {
     let key = relationship.key,
